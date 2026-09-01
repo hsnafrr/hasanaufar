@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hasan Aufar — brands, content, automated systems</title>
+<meta name="description" content="Hasan Aufar builds websites and AI automation for small businesses in Indonesia, runs the Farnsher Studio product shop, and documents the work as hsnrr.tech. 14 shipped builds, four of them live client work.">
+<meta name="author" content="Hasan Aufar">
+<meta name="theme-color" content="#04080F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2304080F'/%3E%3Cpath d='M16 5.5 26.5 16 16 26.5 5.5 16Z' fill='none' stroke='%23D9C9A6' stroke-width='1.6'/%3E%3Cpath d='M16 11.5v9M12.5 16h7' stroke='%238FD8EE' stroke-width='1.4'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hasan Aufar — brands, content, automated systems">
+<meta property="og:description" content="Frontend and AI-agent developer in Yogyakarta. 14 shipped builds, four live client sites, and the story behind why I do all three at once.">
+<meta property="og:image" content="assets/img/hero-poster.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,WONK@0,9..144,300..700,1;1,9..144,300..700,1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/works.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to the work</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="mark" href="#top" aria-label="Hasan Aufar — home">
+    <svg class="mark__glyph" viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 3 29 16 16 29 3 16Z"/>
+      <path class="mark__inner" d="M16 9.5v13M10.5 16h11"/>
+    </svg>
+    <span class="mark__text"><b>Hasan Aufar</b><i>Farnsher Studio</i></span>
+  </a>
+  <nav class="nav__links" aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#content">Content</a>
+    <a class="nav__book" href="#booking">Book a build</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ============ 00 · THE FILM ============ -->
+<section class="hero" id="hero" aria-label="Introduction">
+  <div class="hero__stage">
+    <video class="hero__video" id="heroVideo" src="assets/video/hero-scrub.mp4"
+           poster="assets/img/hero-poster.webp" muted playsinline preload="auto"
+           disablepictureinpicture aria-hidden="true"></video>
+    <div class="hero__scrim"></div>
+    <div class="hero__grain"></div>
+
+    <div class="hero__inner" id="heroInner">
+      <h1 class="display" id="heroTitle">
+        <span class="line"><span>I build brands,</span></span>
+        <span class="line"><span>content, and</span></span>
+        <span class="line"><span><i>automated systems.</i></span></span>
+      </h1>
+      <p class="hero__meta" id="heroMeta">
+        <span>Hasan Aufar</span><span class="dot" aria-hidden="true"></span>
+        <span>Yogyakarta, Indonesia</span><span class="dot" aria-hidden="true"></span>
+        <span>Available for frontend &amp; automation work</span>
+      </p>
+    </div>
+
+    <!-- scroll-driven beats: each one lands on a moment of the footage -->
+    <div class="beats">
+      <figure class="beat" id="beat1">
+        <span class="beat__n">01</span>
+        <p class="beat__t">Brands</p>
+        <p class="beat__d">Sites that make a six-table warung look like the real thing — because it is.</p>
+      </figure>
+      <figure class="beat" id="beat2">
+        <span class="beat__n">02</span>
+        <p class="beat__t">Content</p>
+        <p class="beat__d">I film every build while it&rsquo;s still ugly. 18,000 views in the first month.</p>
+      </figure>
+      <figure class="beat" id="beat3">
+        <span class="beat__n">03</span>
+        <p class="beat__t">Systems</p>
+        <p class="beat__d">Bookings, estimators, agents — the parts that keep working after I leave.</p>
+      </figure>
+    </div>
+
+    <div class="hero__end" id="heroEnd">
+      <p class="eyebrow eyebrow--c">Fourteen builds &middot; four paying clients</p>
+      <h2 class="h2">Everything after this<br>is the evidence.</h2>
+      <div class="hero__endctl">
+        <a class="btn" href="#identities">Know more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+        <a class="link" href="#work">Or jump straight to the work</a>
+      </div>
+    </div>
+
+    <p class="hero__cue" id="heroCue"><i aria-hidden="true"></i>Scroll</p>
+  </div>
+</section>
+
+<!-- ============ 01 · IDENTITIES ============ -->
+<section class="section ring-sec" id="identities" aria-labelledby="idTitle">
+  <div class="wrap">
+    <div class="ring__head">
+      <p class="eyebrow"><span class="num">01</span> Three sides, one job</p>
+      <h2 class="h2 rv" id="idTitle">The same work, seen from three angles.</h2>
+    </div>
+  </div>
+
+  <div class="ring" id="ring" role="group" aria-label="Identity carousel" tabindex="0">
+    <div class="ring__track" id="ringTrack"><!-- cards injected --></div>
+  </div>
+
+  <div class="wrap">
+    <div class="ring__copy">
+      <span class="ring__ghost" id="ringGhost" aria-hidden="true">01</span>
+      <p class="ring__role" id="ringRole"></p>
+      <h3 class="h3" id="ringName"></h3>
+      <p class="lede" id="ringCopy" aria-live="polite"></p>
+      <ul class="ring__facts" id="ringFacts"></ul>
+
+      <div class="ring__ctrl">
+        <button class="ring__btn" id="ringPrev" aria-label="Previous identity">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+        </button>
+        <div class="ring__dots" id="ringDots"></div>
+        <button class="ring__btn" id="ringNext" aria-label="Next identity">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </button>
+      </div>
+      <p class="small ring__hint">Drag the ring, or use &larr; &rarr;</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ 02 · ABOUT ============ -->
+<section class="section" id="about" aria-labelledby="aboutTitle">
+  <div class="wrap about__grid">
+    <div>
+      <p class="eyebrow"><span class="num">02</span> Why all three</p>
+      <h2 class="h2 rv" id="aboutTitle">I didn&rsquo;t plan a portfolio career.<br>I planned a way out.</h2>
+
+      <div class="about__body" id="aboutBody" style="margin-top:2rem">
+        <p class="first rv">All I wanted was a normal, quiet life. My family, enough money, and a future I could look forward to.</p>
+        <p class="rv">I lost my mom when I was seven. At that age you don&rsquo;t understand how long the rest of your life really is. Then COVID hit and my dad&rsquo;s income collapsed, and the future stopped being the thing we worried about — we had to get through the present. I&rsquo;m the middle child. There were three younger than me still to feed.</p>
+        <p class="rv">I was in high school. I couldn&rsquo;t fix it, but I could ask him for less. I joined every choir, forum and workshop I could find, then started delivering food after class. That was the plan until the day I got hit on the road.</p>
+
+        <div class="extra">
+          <p>Lying there, I kept doing the same maths. I was working. I was trying. Would this ever be enough to change anything for my family?</p>
+          <p>So I applied to college. Rejected. Applied again. Rejected again. Then, finally, accepted — and my dad said, &ldquo;Let&rsquo;s save this year. You can go next year.&rdquo; I understood the reason. Understanding it didn&rsquo;t make it hurt less. My friends posted their first days on campus. I didn&rsquo;t know how to explain why I wasn&rsquo;t there.</p>
+          <p>So I taught myself to code. If college had to wait, I could still learn something, and I needed somewhere to put the frustration. A page. A button. A website — something that hadn&rsquo;t existed before I sat down. I taught myself English too, because I wanted to work with people outside the world I already knew. Eventually I was building sites for clients abroad. Not suddenly successful. But something I&rsquo;d taught myself was useful to someone else, and that mattered.</p>
+          <p>I kept applying for jobs. Another rejection. And another. I had spent all that time becoming capable, and now I had to learn how to let people see it. So I turned the camera on myself — no finished success story, just work to show and a reason to keep showing up. First month: 18,000 views. That didn&rsquo;t fix our finances or erase the rejections. But people were starting to notice something I had made.</p>
+          <p>When I think about making it, I think about my dad having more room to breathe, and my younger siblings not having to postpone anything. And I think about my mom, and everything I wish I could tell her.</p>
+        </div>
+
+        <blockquote class="pull rv">I made a promise to myself and to my mom: I&rsquo;m going to make this family whole again. I don&rsquo;t know how long it will take. But I&rsquo;m still here, and I&rsquo;m working on it.</blockquote>
+
+        <button class="about__more" id="aboutToggle" aria-expanded="false" aria-controls="aboutBody">Read the whole story</button>
+      </div>
+    </div>
+
+    <div class="player" id="player">
+      <div class="player__frame">
+        <video id="storyVideo" src="assets/video/story.mp4" playsinline preload="metadata"
+               poster="assets/img/story-poster.webp"></video>
+        <button class="player__btn" id="storyPlay" aria-label="Play the story film, 42 seconds">
+          <i aria-hidden="true"></i>
+        </button>
+      </div>
+      <p class="player__cap"><span>story.mp4</span><span id="storyTime">00:42</span></p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ 03 · WORK ============ -->
+<!-- ============ THE CONTACT SHEET (latent) ============ -->
+<section class="sheet" id="sheet" aria-labelledby="sheetTitle">
+  <div class="wrap sheet__head">
+    <p class="eyebrow">The contact sheet</p>
+    <h2 class="h2" id="sheetTitle">Fourteen frames, undeveloped.</h2>
+    <p class="small sheet__hint">Move across them &mdash; only what you look at develops.
+      Pick one and it opens below.</p>
+  </div>
+  <div class="sheet__grid" id="sheetGrid"><!-- injected by js/works.js --></div>
+</section>
+
+<section class="section" id="work" aria-labelledby="workTitle">
+  <div class="wrap">
+    <div class="work__head">
+      <div>
+        <p class="eyebrow"><span class="num">03</span> Web &amp; AI automation</p>
+        <h2 class="h2 rv" id="workTitle">Fourteen builds.<br>Newest first.</h2>
+      </div>
+      <p class="small rv" style="max-width:38ch">Every one of these is live and clickable. Four are paid client work; the rest I built to prove a specific capability before anyone asked me for it.</p>
+    </div>
+    <div class="works"><div class="works__list" id="worksGrid"></div></div>
+  </div>
+</section>
+
+<!-- ============ 04 · SERVICES + BOOKING ============ -->
+<section class="section services" id="services" aria-labelledby="svcTitle">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">04</span> What I build for you</p>
+    <h2 class="h2 rv" id="svcTitle">Six things, and every one<br>already shipped for someone.</h2>
+    <p class="lede rv" style="margin-top:1.4rem">Nothing on this list is theoretical — each line points at a build in the section above. Price follows the page count first, then whether it needs booking, payments or automation on top.</p>
+
+    <ol class="svc">
+      <li class="svc__item rv">
+        <span class="svc__n">S1</span>
+        <div class="svc__body">
+          <h3 class="h3">Brand site</h3>
+          <p>Positioning, copy, build, deploy, handover. The 24-hour storefront a business gets judged by before anyone visits it.</p>
+          <p class="svc__proof">Shipped: NYOH &middot; Olive Fried Chicken &middot; Morfosa Transport</p>
+        </div>
+        <span class="svc__scale">1&ndash;5 pages</span>
+      </li>
+      <li class="svc__item rv">
+        <span class="svc__n">S2</span>
+        <div class="svc__body">
+          <h3 class="h3">Booking &amp; reservation flow</h3>
+          <p>Tables, rooms, appointments or vehicles — routed to the right branch and delivered as a structured WhatsApp message instead of a blank chat.</p>
+          <p class="svc__proof">Shipped: Zona Seafood &middot; VIE Beauty &middot; HYVE Hotel</p>
+        </div>
+        <span class="svc__scale">+ booking engine</span>
+      </li>
+      <li class="svc__item rv">
+        <span class="svc__n">S3</span>
+        <div class="svc__body">
+          <h3 class="h3">Online storefront</h3>
+          <p>Catalogue, filters, cart, and a configurator when the product has options. Your branding and your margin, off the marketplace.</p>
+          <p class="svc__proof">Shipped: Pulpora &middot; HYVE E-Commerce</p>
+        </div>
+        <span class="svc__scale">+ catalogue</span>
+      </li>
+      <li class="svc__item rv">
+        <span class="svc__n">S4</span>
+        <div class="svc__body">
+          <h3 class="h3">Operations tools</h3>
+          <p>POS, client portal, cost estimator, progress tracked by phase. The unglamorous software the business actually runs on.</p>
+          <p class="svc__proof">Shipped: Steak Hour POS &middot; Fast Construction Yogyakarta</p>
+        </div>
+        <span class="svc__scale">+ internal app</span>
+      </li>
+      <li class="svc__item rv">
+        <span class="svc__n">S5</span>
+        <div class="svc__body">
+          <h3 class="h3">AI agents &amp; workflow automation</h3>
+          <p>An agent that answers from your own documents, intake that pre-fills itself, and handoffs into WhatsApp, Sheets or Stripe.</p>
+          <p class="svc__proof">Shipped: Morfosa OpsBrain &middot; Morph3D intake</p>
+        </div>
+        <span class="svc__scale">+ automation</span>
+      </li>
+      <li class="svc__item rv">
+        <span class="svc__n">S6</span>
+        <div class="svc__body">
+          <h3 class="h3">Bilingual &amp; performance pass</h3>
+          <p>English and Bahasa Indonesia side by side, plus the image, video and font work that keeps the site fast on a mid-range phone.</p>
+          <p class="svc__proof">Shipped: Morfosa Transport &middot; VIE Beauty</p>
+        </div>
+        <span class="svc__scale">add-on</span>
+      </li>
+    </ol>
+  </div>
+
+  <!-- ---- booking ---- -->
+  <div class="wrap book" id="booking">
+    <div class="book__intro">
+      <p class="eyebrow eyebrow--c">Book a build</p>
+      <h2 class="h2 rv">Tell me the page count.<br>You get a number the same day.</h2>
+      <p class="lede rv">There is no fixed price list, because a one-page launch and a six-branch reservation system aren&rsquo;t the same job. Pick what you need — it writes the brief for you and sends it straight to my WhatsApp.</p>
+      <p class="small rv">Turnaround is usually 4&ndash;10 days for a brand site, and 2&ndash;4 weeks once booking, a storefront or automation is involved.</p>
+    </div>
+
+    <form class="book__form rv" id="bookForm" novalidate>
+      <fieldset class="book__group">
+        <legend>How many pages?</legend>
+        <div class="chips" id="chipPages">
+          <button type="button" class="chip" data-pages="One page" aria-pressed="false">One page</button>
+          <button type="button" class="chip" data-pages="2&ndash;5 pages" aria-pressed="false">2&ndash;5</button>
+          <button type="button" class="chip" data-pages="6&ndash;10 pages" aria-pressed="false">6&ndash;10</button>
+          <button type="button" class="chip" data-pages="10+ pages" aria-pressed="false">10+</button>
+          <button type="button" class="chip" data-pages="page count not decided" aria-pressed="false">Not sure yet</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="book__group">
+        <legend>What does it need on top?</legend>
+        <div class="chips" id="chipNeeds">
+          <button type="button" class="chip" data-need="booking / reservation flow" aria-pressed="false">Booking flow</button>
+          <button type="button" class="chip" data-need="online storefront" aria-pressed="false">Storefront</button>
+          <button type="button" class="chip" data-need="POS or client portal" aria-pressed="false">POS / portal</button>
+          <button type="button" class="chip" data-need="AI agent or automation" aria-pressed="false">AI automation</button>
+          <button type="button" class="chip" data-need="bilingual EN/ID" aria-pressed="false">Bilingual EN/ID</button>
+          <button type="button" class="chip" data-need="copywriting" aria-pressed="false">Copywriting</button>
+        </div>
+      </fieldset>
+
+      <label class="book__field">
+        <span>Your business, in one line</span>
+        <input type="text" id="bookWho" maxlength="140" autocomplete="organization"
+               placeholder="a spa studio in Sleman, still booking over WhatsApp">
+      </label>
+
+      <div class="book__out">
+        <p class="book__label">The brief you&rsquo;ll send</p>
+        <pre class="book__preview" id="bookPreview" aria-live="polite"></pre>
+      </div>
+
+      <div class="book__actions">
+        <a class="btn btn--solid" id="bookWa" href="https://wa.me/6289620928296" target="_blank" rel="noopener">
+          Send it on WhatsApp
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+        <a class="link" id="bookMail" href="mailto:hasan.aufar1504@gmail.com">Email it instead</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ 05 · STUDIO ============ -->
+<section class="section studio" id="studio" aria-labelledby="studioTitle">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">05</span> Farnsher Studio</p>
+    <h2 class="h2 rv" id="studioTitle">Things I already know how to do,<br>packaged so you can use them.</h2>
+    <p class="lede rv" style="margin-top:1.4rem">I&rsquo;ve built 25 projects with AI assistance. The useful part isn&rsquo;t the tools — it&rsquo;s the prompts, structures and components that survived the projects that went wrong. That&rsquo;s what the shop sells. Everything is built by me, from work I actually shipped.</p>
+
+    <div class="studio__grid">
+      <article class="card rv">
+        <p class="card__status live">Flagship</p>
+        <h3>Prompt Library</h3>
+        <p>100 prompts for building a website from scratch with Claude or ChatGPT — the sequence I use, in the order I use it, drawn from 25 builds.</p>
+        <p class="card__price">$12&ndash;15</p>
+      </article>
+      <article class="card rv">
+        <p class="card__status">In production</p>
+        <h3>UI Component Pack</h3>
+        <p>Landing-page components in plain HTML, CSS and JS. Drop-in, no framework, no build step — pulled out of the sites in the Work section.</p>
+        <p class="card__price">$10&ndash;20</p>
+      </article>
+      <article class="card rv">
+        <p class="card__status">In production</p>
+        <h3>Freelancer Dashboard</h3>
+        <p>A Notion workspace for freelance web developers: pipeline, project phases, invoices and revision tracking, structured the way a dev actually thinks.</p>
+        <p class="card__price">$8&ndash;12</p>
+      </article>
+      <article class="card rv">
+        <p class="card__status">Planned</p>
+        <h3>Caption Pack for tech creators</h3>
+        <p>50 captions for developer and AI-tool content. Written for the format I post in every week, not scraped from a swipe file.</p>
+        <p class="card__price">$5&ndash;8</p>
+      </article>
+    </div>
+
+    <div class="studio__cta">
+      <a class="link" href="https://payhip.com/hsnrrtech" target="_blank" rel="noopener">
+        Visit the shop <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+      <p class="small" style="margin:0">Payhip &middot; instant download &middot; new product roughly every two weeks</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ 06 · CONTENT ============ -->
+<section class="section" id="content" aria-labelledby="contentTitle">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">06</span> hsnrr.tech</p>
+    <h2 class="h2 rv" id="contentTitle">I post the build, not the highlight reel.</h2>
+    <p class="lede rv" style="margin-top:1.4rem">I make content about web development and AI tools because I want to be known as someone who genuinely builds with them, not someone who talks about them. The goal is specific: remote frontend work, ideally with a team in Europe. Everything I post — the builds, the reviews, the breakdowns — is part of getting there from zero.</p>
+
+    <ul class="stat rv">
+      <li><b>18,000</b><span>Views, first month</span></li>
+      <li><b>6</b><span>Content pillars</span></li>
+      <li><b>1</b><span>New AI tool, weekly</span></li>
+    </ul>
+
+    <ul class="pillars">
+      <li class="pillar rv"><em>01</em><h3>Verdict</h3><p>Every carousel ends with my call on whether the thing is worth your time. You leave with a decision, not a list of features.</p></li>
+      <li class="pillar rv"><em>02</em><h3>AI Reviews</h3><p>I use the tool, push it until it breaks, then show what it&rsquo;s actually good at and where it falls apart. The most researched thing I make, and the most rewatched.</p></li>
+      <li class="pillar rv"><em>03</em><h3>Portfolio</h3><p>Every site documented while I build it — the process, not a polished retelling. Hotel booking, e-commerce, agent platforms, all of it.</p></li>
+      <li class="pillar rv"><em>04</em><h3>Content</h3><p>The hub: carousels, POV build videos, AI tool tier lists, the Day 1 build-in-public series, and My Story episodes.</p></li>
+      <li class="pillar rv"><em>05</em><h3>Tools</h3><p>One new AI tool every week. Follow this one and you&rsquo;ll find at least one thing a week you hadn&rsquo;t heard of.</p></li>
+      <li class="pillar rv"><em>06</em><h3>AI Testing</h3><p>&ldquo;Let&rsquo;s build ___&rdquo;. Same real brief, different AI tools, and you watch exactly what each one produces.</p></li>
+    </ul>
+
+    <div class="studio__cta">
+      <a class="link" href="https://instagram.com/hsnrr.tech" target="_blank" rel="noopener">Instagram <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <a class="link" href="https://tiktok.com/@hsnrr.tech" target="_blank" rel="noopener">TikTok <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <a class="link" href="https://youtube.com/@hsnafrrtech" target="_blank" rel="noopener">YouTube <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 · CONTACT ============ -->
+<section class="section contact" id="contact" aria-labelledby="contactTitle">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">07</span> Contact</p>
+    <h2 class="h2 rv" id="contactTitle">Tell me what you&rsquo;re building. I&rsquo;ll tell you what it takes.</h2>
+    <div class="contact__grid">
+      <p class="lede rv">Fastest reply is WhatsApp. If you&rsquo;re hiring, email is better — send the role and I&rsquo;ll send the two builds closest to it. I work in English and Bahasa Indonesia, and I&rsquo;m in GMT+7.</p>
+      <ul class="chan rv">
+        <li><a href="mailto:hasan.aufar1504@gmail.com"><span>Email</span><b>hasan.aufar1504@gmail.com</b></a></li>
+        <li><a href="https://wa.me/6289620928296" target="_blank" rel="noopener"><span>WhatsApp</span><b>+62 896 2092 8296</b></a></li>
+        <li><a href="https://instagram.com/hsnrr.tech" target="_blank" rel="noopener"><span>Instagram</span><b>@hsnrr.tech</b></a></li>
+        <li><a href="https://tiktok.com/@hsnrr.tech" target="_blank" rel="noopener"><span>TikTok</span><b>@hsnrr.tech</b></a></li>
+        <li><a href="https://youtube.com/@hsnafrrtech" target="_blank" rel="noopener"><span>YouTube</span><b>@hsnafrrtech</b></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <span>&copy; <span id="year">2026</span> Hasan Aufar &middot; Farnsher Studio</span>
+  <span>Built in Yogyakarta &middot; hand-coded, no template</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/works.js" defer></script>
+</body>
+</html>
