@@ -54,7 +54,7 @@ window.PROJECTS = [
     "name": "RIV Group Indonesia",
     "sector": "General contractor · Jakarta",
     "url": "https://www.riv-groupindonesia.com",
-    "client": false,
+    "client": true,
     "stack": [
       "ID/EN",
       "Portfolio gallery",
@@ -63,7 +63,7 @@ window.PROJECTS = [
     ],
     "problem": "A contractor bidding on commercial and residential work needs to look established before the first meeting — a WhatsApp number and a few photos don't carry a tender.",
     "solution": "A bilingual company site covering six service lines — commercial buildings, residential, interior fit-out, renovation, civil works, design & build — with floor plans, a project library and a portfolio gallery.",
-    "role": "Live on the company's own domain: the credential a contractor hands over before the proposal."
+    "role": "Live client on the company's own domain: the credential a contractor hands over before the proposal."
   },
   {
     "slug": "b-coffee",
