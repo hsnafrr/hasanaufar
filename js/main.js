@@ -39,11 +39,11 @@
       img: 'assets/img/id-creator.webp',
       tag: 'hsnrr.tech',
       meta: 'Instagram · TikTok · YouTube',
-      copy: 'I review AI tools by actually using them until they break, and I document every site while I build it. No top-ten lists. The account exists so people can watch the work happen and judge it themselves — 18,000 views in the first month.',
+      copy: 'I review AI tools by actually using them until they break, and I document every site while I build it. No top-ten lists. The account exists so people can watch the work happen and judge it themselves — 18,000 views in the first month, 646.8K in a single month six weeks later.',
       facts: [
         ['Pillars', 'Verdict · AI Reviews · Portfolio · Content · Tools · Testing'],
         ['Cadence', 'One new AI tool every week'],
-        ['First month', '18,000 views from zero']
+        ['Last 30 days', '646.8K views · 3,008 followers']
       ]
     },
     {
@@ -51,8 +51,8 @@
       name: 'Frontend &amp; AI agents',
       img: 'assets/img/id-developer.webp',
       tag: 'Frontend / AI',
-      meta: 'Fourteen builds live',
-      copy: 'Next.js, Tailwind and vanilla JS on the front; agent and workflow automation behind it — booking flows that compose themselves into WhatsApp messages, estimators, client portals, RAG. Self-taught, fourteen builds live, still learning in public.',
+      meta: 'Seventeen builds live',
+      copy: 'Next.js, Tailwind and vanilla JS on the front; agent and workflow automation behind it — booking flows that compose themselves into WhatsApp messages, estimators, client portals, RAG. Self-taught, seventeen builds live, still learning in public.',
       facts: [
         ['Stack', 'Next.js · React · Tailwind · vanilla JS · GSAP'],
         ['Automation', 'AI agents, workflow tooling, WhatsApp handoff'],

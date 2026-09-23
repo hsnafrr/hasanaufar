@@ -25,8 +25,8 @@ Static site. No build step, no framework. Open `index.html` on any static host
 | — | The film | A full pinned chapter. The video is seeked frame by frame against scroll; three text beats land on chosen moments; the chapter closes on a "Know more" card. |
 | 01 | Identities | Three landscape stills on a real ring in 3D. Drag it, flick it, arrow it — the copy in the centre follows. |
 | 02 | About | The story, with story.mp4 beside it on click-to-play. |
-| — | Contact sheet | All 14 frames at 4% opacity, blurred and grey. A 280px radius of attention follows the cursor; the nearest frame develops to full, the rest are capped halfway, so only one is ever readable. Pick one and it flies down into its row. |
-| 03 | Work | 14 builds, newest first. One long column; each row arrives from an alternating side and holds a stack of three photos you can drag, step or key through. |
+| — | Contact sheet | All 17 frames at 4% opacity, blurred and grey. A 280px radius of attention follows the cursor; the nearest frame develops to full, the rest are capped halfway, so only one is ever readable. Pick one and it flies down into its row. |
+| 03 | Work | 17 builds, newest first. One long column; each row arrives from an alternating side and holds a stack of three photos you can drag, step or key through. |
 | 04 | Services + booking | Six services, then a form that writes the brief and sends it to WhatsApp. |
 | 05 | Studio | Payhip products. |
 | 06 | Content | hsnrr.tech pillars. |
@@ -43,7 +43,7 @@ Static site. No build step, no framework. Open `index.html` on any static host
 Every project carries three photos: `-1` the landing view, `-2` a section
 further down, `-3` the phone layout (shown contained, not cropped).
 
-Newest project goes at the top of the array; numbering (`14 / 14`) is automatic.
+Newest project goes at the top of the array; numbering (`17 / 17`) is automatic.
 `client: true` marks paid client work. If a screenshot is missing the card falls
 back to a typographic panel — nothing breaks.
 

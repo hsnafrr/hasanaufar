@@ -2,6 +2,102 @@
    `client: true` marks paid client work (vs. self-initiated portfolio builds). */
 window.PROJECTS = [
   {
+    "slug": "northlight-clinic",
+    "name": "Northlight Clinic",
+    "sector": "Clinic booking system",
+    "url": "https://clinic-prototype-three.vercel.app/",
+    "client": false,
+    "stack": [
+      "React",
+      "Vite",
+      "Patient & staff portals",
+      "Vercel"
+    ],
+    "problem": "Clinics lose slots in the gaps between systems: a booking lives in one place, the deposit in another, intake on paper, and a cancellation just leaves an empty chair.",
+    "solution": "One patient journey in six hand-offs — hold, deposit, confirm, intake, document, follow up — with a waitlist that offers a released slot to the next person automatically, and intake answers readable only by the clinician.",
+    "role": "The most system-heavy build here: state that survives a restart, role-based visibility, and a clear line between what front desk sees and what the doctor sees."
+  },
+  {
+    "slug": "ultra-grill",
+    "name": "Ultra Grill",
+    "sector": "Churrasco restaurant · concept",
+    "url": "https://ultra-grill.vercel.app/",
+    "client": false,
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Vercel"
+    ],
+    "problem": "An all-you-can-eat churrasco is confusing to first-timers — nobody knows how the service works, what the packages include, or how long a seating lasts.",
+    "solution": "A one-page site that explains the concept first, then two clear packages with the 90-minute seating spelled out, the signature cuts, hours and location, and reservation straight to WhatsApp.",
+    "role": "A fast, dependency-free build — proof that a restaurant site doesn't need a framework to convert."
+  },
+  {
+    "slug": "veroux",
+    "name": "VEROUX",
+    "sector": "Luxury watch house · concept",
+    "url": "https://watchstore-rouge.vercel.app/",
+    "client": false,
+    "stack": [
+      "Next.js",
+      "Product catalogue",
+      "Wishlist & account",
+      "Vercel"
+    ],
+    "problem": "Luxury e-commerce usually looks like every other shop, which is exactly wrong for a product that is sold on patience and craft.",
+    "solution": "A storytelling-led storefront: an inside-the-manufacture film, four collections that each answer a different question, product pages with references and pricing, plus a wishlist, account, order history and warranty registration.",
+    "role": "Shows I can hold a high-end tone while still shipping the commerce plumbing underneath."
+  },
+  {
+    "slug": "riv-group",
+    "name": "RIV Group Indonesia",
+    "sector": "General contractor · Jakarta",
+    "url": "https://www.riv-groupindonesia.com",
+    "client": false,
+    "stack": [
+      "ID/EN",
+      "Portfolio gallery",
+      "Custom domain",
+      "Vercel"
+    ],
+    "problem": "A contractor bidding on commercial and residential work needs to look established before the first meeting — a WhatsApp number and a few photos don't carry a tender.",
+    "solution": "A bilingual company site covering six service lines — commercial buildings, residential, interior fit-out, renovation, civil works, design & build — with floor plans, a project library and a portfolio gallery.",
+    "role": "Live on the company's own domain: the credential a contractor hands over before the proposal."
+  },
+  {
+    "slug": "b-coffee",
+    "name": "B Coffee Yogya",
+    "sector": "Coffee shop · Jogokaryan",
+    "url": "https://b-coffe-jogja.vercel.app/",
+    "client": false,
+    "stack": [
+      "Installable PWA",
+      "WhatsApp reservation",
+      "Google Maps",
+      "Vercel"
+    ],
+    "problem": "A café on the second floor of a hotel is invisible from the street — people need to see the room, the menu and the events before they'll climb the stairs.",
+    "solution": "A site built around the space itself: the rooms and pool, the menu with a clear price range, the events calendar (markets, exhibitions, live music), a gallery, and reservation plus directions in one tap. Installs to the home screen.",
+    "role": "Turns a hidden location into a destination, and gives regulars an app-like shortcut back."
+  },
+  {
+    "slug": "fold-and-form",
+    "name": "Fold & Form",
+    "sector": "Laundry pickup service",
+    "url": "https://fold-and-form.vercel.app",
+    "client": false,
+    "stack": [
+      "React",
+      "Vite",
+      "Load estimator",
+      "Installable PWA"
+    ],
+    "problem": "Laundry pickup runs on chat: what does it cost, when can you come, do you handle delicates — the same questions, every order.",
+    "solution": "Four care services, a four-step how-it-works, a load estimator that prices by kilo or by item as you type, and a pickup form that captures address, date, service and care notes in one go.",
+    "role": "Pricing up front and a structured request at the end — the booking arrives complete."
+  },
+  {
     "slug": "pulpora",
     "name": "Pulpora",
     "sector": "Juice bar",
@@ -131,20 +227,6 @@ window.PROJECTS = [
     "role": "Proof that a service business can charge on craft when the site shows the craft."
   },
   {
-    "slug": "olive-fried-chicken",
-    "name": "Olive Fried Chicken",
-    "sector": "F&B chain · 115+ outlets",
-    "url": "https://olive-fried-chicken.vercel.app",
-    "client": false,
-    "stack": [
-      "Next.js",
-      "Vercel"
-    ],
-    "problem": "A brand running since 2011 across 115+ outlets, still discovered mostly through third-party listings it doesn't control.",
-    "solution": "A brand page that owns the story — the years, the outlet count, the ratings, and the affordable-price/premium-taste position it already earned.",
-    "role": "The pitch piece for established F&B groups whose web presence lags their footprint."
-  },
-  {
     "slug": "hyve-ecommerce",
     "name": "HYVE E-Commerce",
     "sector": "Storefront template",
@@ -157,22 +239,6 @@ window.PROJECTS = [
     "problem": "Sellers who live inside a marketplace rent their branding and their margin.",
     "solution": "A white-labelable storefront that adapts across product types, so a small brand can own the checkout and the look.",
     "role": "The base I extend when an SME wants off marketplace dependency."
-  },
-  {
-    "slug": "morph3d",
-    "name": "Morph3D",
-    "sector": "Custom 3D printing lab",
-    "url": "https://morph3d.vercel.app",
-    "client": false,
-    "stack": [
-      "Next.js",
-      "Tailwind",
-      "File upload",
-      "Vercel"
-    ],
-    "problem": "Every custom print starts as a DM: what material, what price, can you even make this. The back-and-forth kills the order before it exists.",
-    "solution": "Self-service intake — upload STL or CAD, choose FDM or resin casting, follow the path for your case (file ready, need design, mini batch, cosplay prop), then submit a studio order.",
-    "role": "Turns browsing into a structured brief at the top of the funnel."
   },
   {
     "slug": "steak-hour-pos",
@@ -188,21 +254,6 @@ window.PROJECTS = [
     "problem": "Small kitchens still close the day on paper, which means arithmetic errors and no usable sales history.",
     "solution": "A digital cashier for transactions and daily operations — the boring tool the business runs on.",
     "role": "Operational software, not a brochure. The build that says I can ship tools."
-  },
-  {
-    "slug": "hans-restaurant",
-    "name": "Han's Restaurant",
-    "sector": "UI/UX prototype",
-    "url": "https://restaurant-prototype-hyve.vercel.app",
-    "client": false,
-    "stack": [
-      "Next.js",
-      "Tailwind",
-      "Vercel"
-    ],
-    "problem": "Table service at peak hours bottlenecks on one thing: a person walking between tables and the kitchen.",
-    "solution": "A prototype for ordering from the table plus online booking, priced as the accessible option rather than an enterprise system.",
-    "role": "The prototype I walk local restaurants through when the pitch is digitising the order flow."
   },
   {
     "slug": "hyve-hotel",
