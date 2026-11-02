@@ -38,6 +38,19 @@
   const arrow = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>';
   const total = window.PROJECTS.length;
 
+  /* the agent that fits this business — js/agents.js, keyed by slug */
+  const AG = window.AGENTS || {};
+  const agentBlock = slug => {
+    const a = AG[slug];
+    if (!a) return '';
+    return `<div class="wagent">
+          <p class="wagent__k"><i aria-hidden="true"></i>AI agent <b>${a.name}</b></p>
+          <p class="wagent__job">${a.job}</p>
+          <ul>${a.does.map(d => `<li>${d}</li>`).join('')}</ul>
+          <p class="wagent__lands">Works in ${a.lands}</p>
+        </div>`;
+  };
+
   /* ---------------- markup ---------------- */
   grid.innerHTML = window.PROJECTS.map((p, i) => {
     const n = String(total - i).padStart(2, '0');
@@ -90,6 +103,7 @@
           <div><dt>What I built</dt><dd>${p.solution}</dd></div>
           <div><dt>Why it matters</dt><dd>${p.role}</dd></div>
         </dl>
+        ${agentBlock(p.slug)}
         <a class="link wcard__link" href="${p.url}" target="_blank" rel="noopener"
            tabindex="-1">Visit the live site ${arrow}</a>
       </div>

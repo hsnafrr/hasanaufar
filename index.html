@@ -4,20 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hasan Aufar — brands, content, automated systems</title>
-<meta name="description" content="Hasan Aufar builds websites and AI automation for small businesses in Indonesia, runs the Farnsher Studio product shop, and documents the work as hsnrr.tech. 17 shipped builds, five of them live client work.">
+<meta name="description" content="Hasan Aufar builds websites and AI automation for small businesses in Indonesia, runs the Farnsher Studio product shop, and documents the work as hsnrr.tech. 22 shipped builds, each with an AI agent designed for it, plus SEO, content and Meta Ads to get them found.">
 <meta name="author" content="Hasan Aufar">
 <meta name="theme-color" content="#04080F">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2304080F'/%3E%3Cpath d='M16 5.5 26.5 16 16 26.5 5.5 16Z' fill='none' stroke='%23D9C9A6' stroke-width='1.6'/%3E%3Cpath d='M16 11.5v9M12.5 16h7' stroke='%238FD8EE' stroke-width='1.4'/%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hasan Aufar — brands, content, automated systems">
-<meta property="og:description" content="Frontend and AI-agent developer in Yogyakarta. 17 shipped builds, five live client sites, and the story behind why I do all three at once.">
+<meta property="og:description" content="Frontend and AI-agent developer in Yogyakarta. 22 shipped builds, an AI agent for every one of them, and the story behind why I do all three at once.">
 <meta property="og:image" content="assets/img/hero-poster.webp">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,WONK@0,9..144,300..700,1;1,9..144,300..700,1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/farnsher-display.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/farnsher-text.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/works.css">
+<link rel="stylesheet" href="css/growth.css">
 </head>
 <body>
 <a class="skip" href="#work">Skip to the work</a>
@@ -34,8 +34,9 @@
   <nav class="nav__links" aria-label="Sections">
     <a href="#about">About</a>
     <a href="#work">Work</a>
+    <a href="#agents">Agents</a>
+    <a href="#growth">Growth</a>
     <a href="#services">Services</a>
-    <a href="#content">Content</a>
     <a class="nav__book" href="#booking">Book a build</a>
   </nav>
 </header>
@@ -84,7 +85,7 @@
     </div>
 
     <div class="hero__end" id="heroEnd">
-      <p class="eyebrow eyebrow--c">Seventeen builds &middot; five paying clients</p>
+      <p class="eyebrow eyebrow--c">Twenty-two builds &middot; an agent for each</p>
       <h2 class="h2">Everything after this<br>is the evidence.</h2>
       <div class="hero__endctl">
         <a class="btn" href="#identities">Know more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
@@ -179,7 +180,7 @@
 <section class="sheet" id="sheet" aria-labelledby="sheetTitle">
   <div class="wrap sheet__head">
     <p class="eyebrow">The contact sheet</p>
-    <h2 class="h2" id="sheetTitle">Seventeen frames, undeveloped.</h2>
+    <h2 class="h2" id="sheetTitle">Twenty-two frames, undeveloped.</h2>
     <p class="small sheet__hint">Move across them &mdash; only what you look at develops.
       Pick one and it opens below.</p>
   </div>
@@ -191,20 +192,201 @@
     <div class="work__head">
       <div>
         <p class="eyebrow"><span class="num">03</span> Web &amp; AI automation</p>
-        <h2 class="h2 rv" id="workTitle">Seventeen builds.<br>Newest first.</h2>
+        <h2 class="h2 rv" id="workTitle">Twenty-two builds.<br>Newest first.</h2>
       </div>
-      <p class="small rv" style="max-width:38ch">Every one of these is live and clickable. Five are paid client work; the rest I built to prove a specific capability before anyone asked me for it.</p>
+      <p class="small rv" style="max-width:38ch">Every one of these is live and clickable, in four languages across three continents. Each row ends with the AI agent that fits that business.</p>
     </div>
     <div class="works"><div class="works__list" id="worksGrid"></div></div>
   </div>
 </section>
 
-<!-- ============ 04 · SERVICES + BOOKING ============ -->
+<!-- ============ 04 · AI AGENTS ============ -->
+<section class="section agents" id="agents" aria-labelledby="agentsTitle">
+  <div class="wrap">
+    <div class="agents__head">
+      <div>
+        <p class="eyebrow"><span class="num">04</span> AI agents</p>
+        <h2 class="h2 rv" id="agentsTitle">Every site above gets a colleague who does one job well.</h2>
+      </div>
+      <p class="lede rv">A site gets people to ask. The agent answers — from the business&rsquo;s own menu, price list, SOPs and calendar — then hands over a complete request, not a blank chat. It speaks the customer&rsquo;s language, works at 2am, and passes to a person the moment it should.</p>
+    </div>
+
+    <div class="console rv" id="console">
+      <div class="console__side" role="tablist" aria-label="Choose a business">
+        <!-- tabs injected by js/growth.js -->
+      </div>
+      <div class="console__main">
+        <div class="console__top">
+          <span class="console__dot" aria-hidden="true"></span>
+          <span class="console__who" id="consoleWho">Ritual Guide</span>
+          <span class="console__for" id="consoleFor">VIE Beauty</span>
+          <span class="console__chan" id="consoleChan">WhatsApp</span>
+        </div>
+        <div class="console__log" id="consoleLog" aria-live="polite"></div>
+        <div class="console__out">
+          <p class="console__label">What lands on the owner&rsquo;s phone</p>
+          <pre class="console__brief" id="consoleBrief"></pre>
+        </div>
+      </div>
+    </div>
+
+    <ol class="flowline rv" aria-label="How an agent is built">
+      <li><em>01</em><b>Your knowledge</b><span>Menu, price list, SOPs, FAQ, past chats &mdash; what staff already answer from.</span></li>
+      <li><em>02</em><b>One job</b><span>Book, quote, qualify or follow up. One agent, one job, written rules.</span></li>
+      <li><em>03</em><b>Your channels</b><span>WhatsApp, Instagram DM, site chat, email, Sheets, calendar.</span></li>
+      <li><em>04</em><b>A person when it matters</b><span>Complaints, refunds, anything it isn&rsquo;t sure of goes to you with the context.</span></li>
+    </ol>
+
+    <div class="roster">
+      <div class="roster__head">
+        <h3 class="h3 rv">The whole roster &mdash; one agent per business.</h3>
+        <p class="small rv">Click a row to read what it does. Every business is in the Work section above.</p>
+      </div>
+      <div class="roster__list" id="roster"><!-- injected by js/growth.js --></div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ 05 · GROWTH: SEO · CONTENT · META ADS ============ -->
+<section class="section growth" id="growth" aria-labelledby="growthTitle">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">05</span> Getting found</p>
+    <h2 class="h2 rv" id="growthTitle">A site nobody finds is a brochure in a drawer.</h2>
+    <p class="lede rv" style="margin-top:1.4rem">So the build doesn&rsquo;t stop at deploy. Search brings the people already looking, content makes people who weren&rsquo;t looking stop scrolling, and ads put it in front of exactly the right ones &mdash; then the agent answers every lead before it goes cold. Below is one worked example of each, made the way I make them for clients.</p>
+
+    <!-- the funnel, drawn as you scroll -->
+    <div class="funnel rv" aria-hidden="true">
+      <svg viewBox="0 0 1000 60" preserveAspectRatio="none"><path id="funnelPath" d="M10 30 H990"/></svg>
+      <ol><li>Content</li><li>Meta Ads</li><li>Search</li><li>Website</li><li>AI agent</li><li>Booking</li></ol>
+    </div>
+
+    <!-- ---- G1 · SEO ---- -->
+    <article class="track" id="seo">
+      <div class="track__text">
+        <p class="track__n">G1 &middot; SEO</p>
+        <h3 class="h3 rv">Rank for what customers actually type, in the town they type it from.</h3>
+        <p class="rv">Small businesses don&rsquo;t compete for &ldquo;renovation&rdquo;. They compete for &ldquo;renovation company near me&rdquo; and the name of their district. Every build ships with that groundwork done, not bolted on later.</p>
+        <ul class="ticks rv">
+          <li>Keyword map per page: the service, the area, the question people ask</li>
+          <li>Title, description and Open Graph written for a click, not stuffed</li>
+          <li>Structured data (LocalBusiness, Service, FAQ, Product) so search engines read the details</li>
+          <li>Google Business Profile, reviews and the map pin aligned with the site</li>
+          <li>Speed: self-hosted fonts, WebP, lazy media &mdash; Core Web Vitals in the green</li>
+          <li>Bilingual pages with hreflang, so EN and ID don&rsquo;t compete with each other</li>
+        </ul>
+      </div>
+      <div class="track__demo rv">
+        <p class="demo__cap">Example &middot; Atelier R&eacute;novation TD, Essonne</p>
+        <div class="serp">
+          <p class="serp__q"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>r&eacute;novation tous corps d&rsquo;&eacute;tat essonne</p>
+          <div class="serp__r">
+            <p class="serp__url">atelier-renovation-td.vercel.app <span>&rsaquo; services</span></p>
+            <p class="serp__t">Atelier R&eacute;novation TD | R&eacute;novation tous corps d&rsquo;&eacute;tat en Essonne (91)</p>
+            <p class="serp__d">Peinture, pl&acirc;trerie, plomberie, menuiserie : un seul interlocuteur pour tout votre chantier &agrave; La Ville-du-Bois et en &Icirc;le-de-France. Devis sur demande.</p>
+            <p class="serp__rich">Services &middot; M&eacute;thode &middot; Avis clients &middot; Devis sur demande</p>
+          </div>
+        </div>
+        <pre class="code"><code><span class="c">&lt;!-- structured data, in the page head --&gt;</span>
+{
+  <span class="k">"@type"</span>: <span class="s">"HomeAndConstructionBusiness"</span>,
+  <span class="k">"name"</span>: <span class="s">"Atelier Rénovation TD"</span>,
+  <span class="k">"areaServed"</span>: [<span class="s">"Essonne"</span>, <span class="s">"Île-de-France"</span>],
+  <span class="k">"address"</span>: { <span class="k">"addressLocality"</span>: <span class="s">"La Ville-du-Bois"</span>, <span class="k">"postalCode"</span>: <span class="s">"91620"</span> },
+  <span class="k">"makesOffer"</span>: [<span class="s">"Peinture"</span>, <span class="s">"Plâtrerie"</span>, <span class="s">"Plomberie"</span>, <span class="s">"Menuiserie"</span>]
+}</code></pre>
+      </div>
+    </article>
+
+    <!-- ---- G2 · CONTENT + MOTION ---- -->
+    <article class="track track--flip" id="motion">
+      <div class="track__text">
+        <p class="track__n">G2 &middot; Content creation &amp; motion video</p>
+        <h3 class="h3 rv">Reels people watch to the end, cut from the business itself.</h3>
+        <p class="rv">I grew my own account from 18,000 views in its first month to 646.8K views in thirty days, filming builds while they were still ugly. Same method for a client: a hook in the first second, the product doing what it does, and one clear next step. Motion graphics, captions and the edit included.</p>
+        <ul class="ticks rv">
+          <li>Short-form video for Reels, TikTok and Shorts &mdash; scripted, shot or screen-recorded, edited</li>
+          <li>Motion graphics: kinetic type, product and UI animation, logo stings</li>
+          <li>Carousels and captions with a verdict, not a feature list</li>
+          <li>A monthly calendar so posting doesn&rsquo;t depend on inspiration</li>
+        </ul>
+      </div>
+      <div class="track__demo rv">
+        <p class="demo__cap">Example storyboard &middot; Papa E&rsquo;s Bakery &middot; 15-second reel</p>
+        <ol class="board" id="board">
+          <li><figure><img src="assets/shots/papa-e-bakery-3.webp" alt="" loading="lazy" decoding="async"></figure>
+            <p class="board__tc">0.0&ndash;1.5s</p><p class="board__shot">Macro: chocolate pulls apart</p><p class="board__txt">&ldquo;Sixteen. One home oven.&rdquo;</p></li>
+          <li><figure><img src="assets/shots/papa-e-bakery-1.webp" alt="" loading="lazy" decoding="async" style="object-position:30% 20%"></figure>
+            <p class="board__tc">1.5&ndash;4s</p><p class="board__shot">Brown butter pour, slowed 40%</p><p class="board__txt">Kinetic type: &ldquo;poured slow&rdquo;</p></li>
+          <li><figure><img src="assets/shots/papa-e-bakery-2.webp" alt="" loading="lazy" decoding="async"></figure>
+            <p class="board__tc">4&ndash;8s</p><p class="board__shot">Cakepop dips, ten flavours in a whip-pan</p><p class="board__txt">Flavour names snap in on beat</p></li>
+          <li><figure><img src="assets/shots/papa-e-bakery-1.webp" alt="" loading="lazy" decoding="async" style="object-position:80% 70%"></figure>
+            <p class="board__tc">8&ndash;12s</p><p class="board__shot">Box closes, hand-written name</p><p class="board__txt">&ldquo;Baked for you. Not for a shelf.&rdquo;</p></li>
+          <li><figure class="board__end"><span>Pre-order<br>this week&rsquo;s batch</span></figure>
+            <p class="board__tc">12&ndash;15s</p><p class="board__shot">End card, link in bio</p><p class="board__txt">CTA + the order closing date</p></li>
+        </ol>
+        <div class="week">
+          <p class="demo__cap">The posting week that goes with it</p>
+          <ul>
+            <li><b>Mon</b><span>Batch reveal reel</span></li>
+            <li><b>Tue</b><span>Carousel: how it&rsquo;s made</span></li>
+            <li><b>Wed</b><span>Story poll: next flavour</span></li>
+            <li><b>Thu</b><span>Reel: order opens</span></li>
+            <li><b>Fri</b><span>Customer repost</span></li>
+            <li><b>Sat</b><span>Behind the oven, live</span></li>
+            <li><b>Sun</b><span>&ldquo;Sold out&rdquo; recap</span></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---- G3 · META ADS ---- -->
+    <article class="track" id="ads">
+      <div class="track__text">
+        <p class="track__n">G3 &middot; Meta Ads for leads</p>
+        <h3 class="h3 rv">Ads that end in a conversation, not a like.</h3>
+        <p class="rv">Facebook and Instagram ads set up for one outcome: a lead you can call or message today. Pixel and Conversions API on the site, a tight local audience, three creatives tested against each other, and the agent replying to every lead in under a minute &mdash; because a lead answered an hour later is mostly gone.</p>
+        <ul class="ticks rv">
+          <li>Pixel + Conversions API, events for every booking and form</li>
+          <li>Click-to-WhatsApp or Instant Form, chosen per business</li>
+          <li>Creative from the content track: same footage, cut for ads</li>
+          <li>Weekly report in plain words: cost per lead, leads that booked, what to change</li>
+        </ul>
+      </div>
+      <div class="track__demo rv">
+        <p class="demo__cap">Example campaign plan &middot; VIE Beauty, Sleman</p>
+        <div class="ad">
+          <div class="ad__post">
+            <div class="ad__top"><span class="ad__av">V</span><p><b>VIE Beauty</b><span>Sponsored</span></p></div>
+            <p class="ad__copy">Facial 60 menit, satu terapis, satu ruangan &mdash; hanya untuk Anda. Pilih jadwal lewat WhatsApp, terkonfirmasi dalam satu menit.</p>
+            <figure class="ad__img"><img src="assets/shots/vie-beauty-3.webp" alt="" loading="lazy" decoding="async"></figure>
+            <div class="ad__cta"><span>viebeauty.id</span><b>Send message</b></div>
+          </div>
+          <dl class="plan">
+            <div><dt>Objective</dt><dd>Leads &rarr; conversations on WhatsApp</dd></div>
+            <div><dt>Audience</dt><dd>Women 22&ndash;45, within 8 km of the studio, interests in skincare and spa</dd></div>
+            <div><dt>Creative</dt><dd>3 variants: treatment reel, room walkthrough, price-and-duration card</dd></div>
+            <div><dt>Test</dt><dd>7 days at Rp 75.000/day, then budget moves to the winner</dd></div>
+            <div><dt>Follow-up</dt><dd>Ritual Guide replies, recommends, books &mdash; admin sees a finished brief</dd></div>
+            <div><dt>Measured</dt><dd>Cost per conversation &middot; conversations that booked &middot; cost per booking</dd></div>
+          </dl>
+        </div>
+      </div>
+    </article>
+
+    <p class="small growth__note rv">The SEO page, storyboard and campaign above are worked examples to show the method &mdash; not reported results. Real numbers go in your weekly report.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ 06 · SERVICES + BOOKING ============ -->
 <section class="section services" id="services" aria-labelledby="svcTitle">
   <div class="wrap">
-    <p class="eyebrow"><span class="num">04</span> What I build for you</p>
-    <h2 class="h2 rv" id="svcTitle">Six things, and every one<br>already shipped for someone.</h2>
-    <p class="lede rv" style="margin-top:1.4rem">Nothing on this list is theoretical — each line points at a build in the section above. Price follows the page count first, then whether it needs booking, payments or automation on top.</p>
+    <p class="eyebrow"><span class="num">06</span> What I build for you</p>
+    <h2 class="h2 rv" id="svcTitle">Nine things, from the first page<br>to the hundredth lead.</h2>
+    <p class="lede rv" style="margin-top:1.4rem">Nothing on this list is theoretical — each line points at a build or a worked example above. Price follows the page count first, then whether it needs booking, payments, an agent or growth work on top.</p>
 
     <ol class="svc">
       <li class="svc__item rv">
@@ -261,7 +443,35 @@
         </div>
         <span class="svc__scale">add-on</span>
       </li>
+      <li class="svc__item rv">
+        <span class="svc__n">S7</span>
+        <div class="svc__body">
+          <h3 class="h3">SEO &amp; local search</h3>
+          <p>Keyword map, structured data, Google Business Profile and speed work, so the people already searching find you before a competitor.</p>
+          <p class="svc__proof">Worked example: Atelier R&eacute;novation TD &middot; see Getting found</p>
+        </div>
+        <span class="svc__scale">+ monthly</span>
+      </li>
+      <li class="svc__item rv">
+        <span class="svc__n">S8</span>
+        <div class="svc__body">
+          <h3 class="h3">Content creation &amp; motion video</h3>
+          <p>Reels, motion graphics, carousels and a posting calendar &mdash; the same method that took my own account to 646.8K views in thirty days.</p>
+          <p class="svc__proof">Worked example: Papa E&rsquo;s Bakery storyboard &middot; @hsnrr.tech</p>
+        </div>
+        <span class="svc__scale">per month</span>
+      </li>
+      <li class="svc__item rv">
+        <span class="svc__n">S9</span>
+        <div class="svc__body">
+          <h3 class="h3">Meta Ads for leads</h3>
+          <p>Facebook and Instagram campaigns built to start conversations, with Pixel and Conversions API set up and an agent answering every lead in under a minute.</p>
+          <p class="svc__proof">Worked example: VIE Beauty campaign plan</p>
+        </div>
+        <span class="svc__scale">+ ad spend</span>
+      </li>
     </ol>
+    
   </div>
 
   <!-- ---- booking ---- -->
@@ -294,6 +504,9 @@
           <button type="button" class="chip" data-need="AI agent or automation" aria-pressed="false">AI automation</button>
           <button type="button" class="chip" data-need="bilingual EN/ID" aria-pressed="false">Bilingual EN/ID</button>
           <button type="button" class="chip" data-need="copywriting" aria-pressed="false">Copywriting</button>
+          <button type="button" class="chip" data-need="SEO" aria-pressed="false">SEO</button>
+          <button type="button" class="chip" data-need="content &amp; motion video" aria-pressed="false">Content &amp; video</button>
+          <button type="button" class="chip" data-need="Meta Ads for leads" aria-pressed="false">Meta Ads</button>
         </div>
       </fieldset>
 
@@ -321,10 +534,10 @@
 
 <hr class="rule">
 
-<!-- ============ 05 · STUDIO ============ -->
+<!-- ============ 07 · STUDIO ============ -->
 <section class="section studio" id="studio" aria-labelledby="studioTitle">
   <div class="wrap">
-    <p class="eyebrow"><span class="num">05</span> Farnsher Studio</p>
+    <p class="eyebrow"><span class="num">07</span> Farnsher Studio</p>
     <h2 class="h2 rv" id="studioTitle">Things I already know how to do,<br>packaged so you can use them.</h2>
     <p class="lede rv" style="margin-top:1.4rem">I&rsquo;ve built 25 projects with AI assistance. The useful part isn&rsquo;t the tools — it&rsquo;s the prompts, structures and components that survived the projects that went wrong. That&rsquo;s what the shop sells. Everything is built by me, from work I actually shipped.</p>
 
@@ -366,10 +579,10 @@
 
 <hr class="rule">
 
-<!-- ============ 06 · CONTENT ============ -->
+<!-- ============ 08 · CONTENT ============ -->
 <section class="section" id="content" aria-labelledby="contentTitle">
   <div class="wrap">
-    <p class="eyebrow"><span class="num">06</span> hsnrr.tech</p>
+    <p class="eyebrow"><span class="num">08</span> hsnrr.tech</p>
     <h2 class="h2 rv" id="contentTitle">I post the build, not the highlight reel.</h2>
     <p class="lede rv" style="margin-top:1.4rem">I make content about web development and AI tools because I want to be known as someone who genuinely builds with them, not someone who talks about them. The goal is specific: remote frontend work, ideally with a team in Europe. Everything I post — the builds, the reviews, the breakdowns — is part of getting there from zero.</p>
 
@@ -404,10 +617,10 @@
   </div>
 </section>
 
-<!-- ============ 07 · CONTACT ============ -->
+<!-- ============ 09 · CONTACT ============ -->
 <section class="section contact" id="contact" aria-labelledby="contactTitle">
   <div class="wrap">
-    <p class="eyebrow"><span class="num">07</span> Contact</p>
+    <p class="eyebrow"><span class="num">09</span> Contact</p>
     <h2 class="h2 rv" id="contactTitle">Tell me what you&rsquo;re building. I&rsquo;ll tell you what it takes.</h2>
     <div class="contact__grid">
       <p class="lede rv">Fastest reply is WhatsApp. If you&rsquo;re hiring, email is better — send the role and I&rsquo;ll send the two builds closest to it. I work in English and Bahasa Indonesia, and I&rsquo;m in GMT+7.</p>
@@ -436,7 +649,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <script src="js/projects.js" defer></script>
+<script src="js/agents.js" defer></script>
 <script src="js/main.js" defer></script>
 <script src="js/works.js" defer></script>
+<script src="js/growth.js" defer></script>
 </body>
 </html>

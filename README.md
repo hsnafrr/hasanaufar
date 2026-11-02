@@ -9,14 +9,19 @@ Static site. No build step, no framework. Open `index.html` on any static host
 
     index.html        every section, in order
     css/style.css     all styling; design tokens live in :root at the top
-    js/projects.js    the 17 projects — edit here, the Work section renders from it
+    js/projects.js    the 22 projects — edit here, the Work section renders from it
+    js/agents.js      the AI agent for each project, keyed by slug
+    js/growth.js      agent console demos, the agent roster, the funnel line
+    css/growth.css    styling for the Agents and Getting found sections
+    assets/fonts/     Farnsher Display + Farnsher Text (built by tools/build-font.py)
     js/main.js        ring carousel, hero film, booking brief, reveals, story player
     js/works.js       the works grid: photo stack, drag slider, entry
     css/works.css     works-grid styling and the shared motion tokens
     assets/video/     hero-scrub.mp4 (scrubbed by scroll), story.mp4 (click to play)
     assets/img/       id-*.webp identity stills, posters
     assets/shots/     project screenshots, one per slug
-    tools/shoot.mjs   re-captures every project screenshot
+    tools/shoot.mjs   re-captures every project screenshot (PW_CHANNEL=msedge to use Edge)
+    tools/build-font.py  rebuilds the Farnsher fonts from their OFL sources
 
 ## The sections
 
@@ -25,12 +30,14 @@ Static site. No build step, no framework. Open `index.html` on any static host
 | — | The film | A full pinned chapter. The video is seeked frame by frame against scroll; three text beats land on chosen moments; the chapter closes on a "Know more" card. |
 | 01 | Identities | Three landscape stills on a real ring in 3D. Drag it, flick it, arrow it — the copy in the centre follows. |
 | 02 | About | The story, with story.mp4 beside it on click-to-play. |
-| — | Contact sheet | All 17 frames at 4% opacity, blurred and grey. A 280px radius of attention follows the cursor; the nearest frame develops to full, the rest are capped halfway, so only one is ever readable. Pick one and it flies down into its row. |
-| 03 | Work | 17 builds, newest first. One long column; each row arrives from an alternating side and holds a stack of three photos you can drag, step or key through. |
-| 04 | Services + booking | Six services, then a form that writes the brief and sends it to WhatsApp. |
-| 05 | Studio | Payhip products. |
-| 06 | Content | hsnrr.tech pillars. |
-| 07 | Contact | Every channel. |
+| — | Contact sheet | All 22 frames at 4% opacity, blurred and grey. A 280px radius of attention follows the cursor; the nearest frame develops to full, the rest are capped halfway, so only one is ever readable. Pick one and it flies down into its row. |
+| 03 | Work | 22 builds, newest first, each ending with the AI agent that fits it. One long column; each row arrives from an alternating side and holds a stack of three photos you can drag, step or key through. |
+| 04 | AI agents | A live console: six businesses, each agent working a real request in ID, EN or FR and ending in the brief the owner receives. Then the roster of all 22 agents. |
+| 05 | Getting found | SEO, content & motion video, Meta Ads for leads — one worked example each (Atelier Rénovation, Papa E's, VIE Beauty). |
+| 06 | Services + booking | Nine services, then a form that writes the brief and sends it to WhatsApp. |
+| 07 | Studio | Payhip products. |
+| 08 | Content | hsnrr.tech pillars. |
+| 09 | Contact | Every channel. |
 
 ## Editing
 
@@ -43,7 +50,7 @@ Static site. No build step, no framework. Open `index.html` on any static host
 Every project carries three photos: `-1` the landing view, `-2` a section
 further down, `-3` the phone layout (shown contained, not cropped).
 
-Newest project goes at the top of the array; numbering (`17 / 17`) is automatic.
+Newest project goes at the top of the array; numbering (`22 / 22`) is automatic. Add the matching agent to `js/agents.js` under the same slug.
 `client: true` marks paid client work. If a screenshot is missing the card falls
 back to a typographic panel — nothing breaks.
 
@@ -62,9 +69,15 @@ those into the brief, the `wa.me` link and the mailto. Nothing is priced on the
 page on purpose — the form asks for page count and features, which is what a
 quote actually depends on.
 
-**Colours and type** — the `:root` block in `css/style.css`. Display face is
-Fraunces (with the WONK axis on, which is where the character comes from); UI
-text is Inter. The palette rule: navy is the ground, metallics carry secondary
+**Colours and type** — the `:root` block in `css/style.css`. The type is the
+site's own: **Farnsher Display** for headings and **Farnsher Text** for
+everything else, self-hosted from `assets/fonts/` and never loaded from a
+font CDN. `tools/build-font.py` cuts them from Fraunces and Geist (both SIL
+OFL, which allows modified, renamed versions): Display has the alternate
+h m n s baked in and the *horizon* — a hairline gap through every letter at
+the same height, so each headline carries one continuous line. Text bakes in
+Geist's alternate a, l, R, G, 0 and 1. To swap in a fully commissioned font
+later, replace the three .woff2 files and keep the family names. The palette rule: navy is the ground, metallics carry secondary
 text, and the pale cyan only ever appears as a hairline, a focus ring, or a
 hover glow.
 

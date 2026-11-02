@@ -24,7 +24,8 @@ const list = only ? projects.filter(p => p.slug === only) : projects;
 const out = path.join(root, 'assets', 'shots');
 await mkdir(out, { recursive: true });
 
-const browser = await chromium.launch();
+// PW_CHANNEL=msedge (or chrome) uses an installed browser instead of Playwright's own
+const browser = await chromium.launch(process.env.PW_CHANNEL ? { channel: process.env.PW_CHANNEL } : {});
 const desktop = await browser.newContext({
   viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2,
   colorScheme: 'dark', reducedMotion: 'reduce',

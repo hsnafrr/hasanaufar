@@ -135,6 +135,24 @@
 .wcard dd{margin:0;font-size:.93rem;line-height:1.62;color:#A2ADBB;max-width:54ch}
 .wcard__link{align-self:start}
 
+/* the agent that fits this business */
+.wagent{position:relative;margin:0 0 1.6rem;padding:1rem 1.1rem 1rem 1.2rem;
+  border:1px solid rgba(143,216,238,.14);border-radius:14px;
+  background:linear-gradient(135deg,rgba(143,216,238,.05),rgba(143,216,238,0) 60%);
+  box-shadow:inset 0 1px 0 rgba(232,237,245,.05);max-width:58ch}
+.wagent__k{display:flex;align-items:center;gap:.55rem;margin:0 0 .45rem;
+  font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gunmetal)}
+.wagent__k b{font-family:var(--serif);font-weight:400;font-size:1rem;letter-spacing:0;
+  text-transform:none;color:var(--paper)}
+.wagent__k i{width:7px;height:7px;border-radius:50%;background:var(--cyan);
+  box-shadow:0 0 0 0 rgba(143,216,238,.5);animation:agentPulse 2.4s var(--ease) infinite}
+@keyframes agentPulse{0%{box-shadow:0 0 0 0 rgba(143,216,238,.45)}70%,100%{box-shadow:0 0 0 7px rgba(143,216,238,0)}}
+.wagent__job{margin:0 0 .6rem;font-size:.9rem;color:var(--silver)}
+.wagent ul{margin:0;padding:0;list-style:none;display:grid;gap:.35rem}
+.wagent li{position:relative;padding-left:1rem;font-size:.84rem;line-height:1.55;color:#97A2B1}
+.wagent li::before{content:"";position:absolute;left:0;top:.72em;width:.45rem;height:1px;background:var(--hair-strong)}
+.wagent__lands{margin:.7rem 0 0;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--champagne)}
+
 /* ---------------- entry ----------------
    Latent until the row is scrolled to, then it develops in from its
    side. JS clears these the moment the row has arrived. */
@@ -169,7 +187,7 @@
 
 .sheet__grid{
   display:grid;gap:clamp(8px,1vw,16px);
-  grid-template-columns:repeat(6,minmax(0,1fr));   /* 17 frames: 6 · 6 · 5 */
+  grid-template-columns:repeat(6,minmax(0,1fr));   /* 22 frames: 6 · 6 · 6 · 4 */
   padding-inline:var(--gutter);max-width:var(--maxw);
   margin-inline:auto;width:100%;
 }

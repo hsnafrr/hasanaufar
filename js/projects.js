@@ -2,6 +2,85 @@
    `client: true` marks paid client work (vs. self-initiated portfolio builds). */
 window.PROJECTS = [
   {
+    "slug": "lpm-pelita-kasih",
+    "name": "LPM Pelita Kasih",
+    "sector": "Social foundation & clinic · Yogyakarta",
+    "url": "https://lpm-pelita-kasih.vercel.app/",
+    "client": false,
+    "stack": [
+      "Astro",
+      "Bahasa Indonesia",
+      "Profile film",
+      "Giving channels"
+    ],
+    "problem": "A foundation started by GKI Ngupasan in 1986 runs three very different services — child sponsorship, micro-business support and a primary clinic — and a donor, a patient and a volunteer each need a different way in.",
+    "solution": "One site that splits the mission into three services, puts the clinic's hours and location up front, carries news from the field, and lists six concrete ways to give — prayer, operating funds, foster parenting, goods, micro-business capital, volunteering — with the account number one tap from your clipboard.",
+    "role": "Gives an institution with forty years of history a front door that matches it."
+  },
+  {
+    "slug": "papa-e-bakery",
+    "name": "Papa E's Bakery",
+    "sector": "Home bakery · Atlanta, USA",
+    "url": "https://papa-e-bakery.vercel.app/",
+    "client": false,
+    "stack": [
+      "Pre-order flow",
+      "Flavour picker",
+      "Menu viewer",
+      "Vercel"
+    ],
+    "problem": "A sixteen-year-old baker with 27.8K people following every batch sells out — but orders arrive as DMs, and flavours, quantities and pickup are all negotiated by hand.",
+    "solution": "A pre-order site built around the product: three hero bakes, a menu split into cookies & rolls, seasonal and cakepops, a cakepop picker with ten flavours that dips on tap, the full printed menu in one tap, and ordering explained in three steps.",
+    "role": "Turns a following into an order list without taking the bakery off pre-order."
+  },
+  {
+    "slug": "vie-bondi",
+    "name": "Vié Day Spa Bondi",
+    "sector": "Day spa · Sydney, Australia",
+    "url": "https://vie-beauty.vercel.app/",
+    "client": false,
+    "stack": [
+      "Booking assistant",
+      "Live time slots",
+      "Email confirmation",
+      "Vercel"
+    ],
+    "problem": "Booking a spa by phone means the front desk answers calls mid-treatment, and a guest who thinks of it at 11pm simply doesn't book.",
+    "solution": "Six treatments with duration and price on every line, filtered by massage, face and hair, and a booking assistant: tell it the treatment and the day, choose from live times, get an email confirmation and a reminder. The FAQ covers cancellation, arrival time and gift vouchers.",
+    "role": "The spa takes bookings at midnight without anyone picking up the phone."
+  },
+  {
+    "slug": "atelier-renovation",
+    "name": "Atelier Rénovation TD",
+    "sector": "Renovation contractor · Essonne, France",
+    "url": "https://atelier-renovation-td.vercel.app/",
+    "client": false,
+    "stack": [
+      "French",
+      "Qualified quote form",
+      "Local SEO",
+      "Vercel"
+    ],
+    "problem": "A multi-trade renovation firm competes with a specialist on every trade, and customers don't realise one contractor can run painting, plaster, plumbing and joinery on the same job.",
+    "solution": "A French site built on one idea — one project, several trades, one contact: eight trades, a five-step method from first call to handover, client reviews, the service area, and a quote form that qualifies the job (private or business, project type, site location, indicative budget).",
+    "role": "Requests arrive already qualified, so the first meeting is a site visit, not a phone interview."
+  },
+  {
+    "slug": "combinatoria",
+    "name": "Combinatoria",
+    "sector": "Maths learning game · high school",
+    "url": "https://combinatech-6pc7drkt.manus.space",
+    "client": false,
+    "stack": [
+      "Game-based learning",
+      "Bahasa Indonesia",
+      "Manus"
+    ],
+    "problem": "Combinatorics is where high-school students start memorising formulas they don't understand — permutation or combination becomes a guess.",
+    "solution": "A learning game that walks through counting rules, permutations, combinations and probability as a journey of puzzles, so the concept arrives before the formula.",
+    "role": "Proof that the same build process works for education, not only for shops."
+  },
+  {
     "slug": "northlight-clinic",
     "name": "Northlight Clinic",
     "sector": "Clinic booking system",
