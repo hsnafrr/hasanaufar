@@ -32,7 +32,7 @@ Static site. No build step, no framework. Open `index.html` on any static host
 | 02 | About | The story, with story.mp4 beside it on click-to-play. |
 | — | Contact sheet | All 22 frames at 4% opacity, blurred and grey. A 280px radius of attention follows the cursor; the nearest frame develops to full, the rest are capped halfway, so only one is ever readable. Pick one and it flies down into its row. |
 | 03 | Work | 22 builds, newest first, each ending with the AI agent that fits it. One long column; each row arrives from an alternating side and holds a stack of three photos you can drag, step or key through. |
-| 04 | AI agents | A live console: six businesses, each agent working a real request in ID, EN or FR and ending in the brief the owner receives. Then the roster of all 22 agents. |
+| 04 | AI agents | A live console: six businesses, each agent working a real request in English and ending in the brief the owner receives. Then the roster of all 22 agents. |
 | 05 | Getting found | SEO, content & motion video, Meta Ads for leads — one worked example each (Atelier Rénovation, Papa E's, VIE Beauty). |
 | 06 | Services + booking | Nine services, then a form that writes the brief and sends it to WhatsApp. |
 | 07 | Studio | Payhip products. |

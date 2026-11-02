@@ -15,51 +15,51 @@
 
   /* ---------------- the console ---------------- */
   const DEMOS = [
-    { slug: 'vie-beauty', chan: 'WhatsApp', lang: 'ID', log: [
-      ['in',  'Halo kak, kulit saya lagi kering banget. Ada treatment yang cocok? Sabtu bisa?'],
-      ['out', 'Halo! Untuk kulit kering, facial hidrasi 60 menit paling pas. Sabtu ini masih ada jam 11.00 dan 15.30 — mau yang mana?'],
-      ['in',  '15.30 ya'],
-      ['out', 'Siap, jam 15.30 saya kunci. Boleh nama, dan apakah ada alergi produk?'],
-      ['in',  'Rina, nggak ada alergi'],
-      ['out', 'Terima kasih, Rina. Booking terkonfirmasi — pengingat saya kirim Jumat sore.'] ],
+    { slug: 'vie-beauty', chan: 'WhatsApp', log: [
+      ['in',  'Hi! My skin has been really dry lately. Which treatment would help? Is Saturday possible?'],
+      ['out', 'Hi! For dry skin, the 60-minute hydrating facial is the best fit. This Saturday we still have 11:00 and 15:30 — which works for you?'],
+      ['in',  '15:30 please'],
+      ['out', 'Great, 15:30 is held for you. May I have your name, and do you have any product allergies?'],
+      ['in',  'Rina, no allergies'],
+      ['out', 'Thank you, Rina. Your booking is confirmed — I will send a reminder on Friday afternoon.'] ],
       brief: 'NEW BOOKING\nTreatment   Hydrating facial · 60 min\nWhen        Saturday 15:30\nGuest       Rina · no allergies\nSkin        dry\nSource      Instagram ad → WhatsApp' },
 
-    { slug: 'papa-e-bakery', chan: 'Instagram DM', lang: 'EN', log: [
+    { slug: 'papa-e-bakery', chan: 'Instagram DM', log: [
       ['in',  'can I get a dozen brown butter cookies for saturday?'],
-      ['out', "Yes! This batch still has room. Pickup is Saturday — want to add cakepops? Cookies & Cream is back this week."],
+      ['out', 'Yes! This batch still has room. Pickup is Saturday — want to add cakepops? Cookies & Cream is back this week.'],
       ['in',  'add 6 cookies and cream'],
-      ['out', "Done: 12 brown butter chocolate chunk + 6 Cookies & Cream cakepops, Saturday pickup. Payment link is below — I'll remind you Friday evening."] ],
+      ['out', 'Done: 12 brown butter chocolate chunk + 6 Cookies & Cream cakepops, Saturday pickup. Payment link is below — I will remind you Friday evening.'] ],
       brief: 'PRE-ORDER · this week\'s batch\n12 × Brown butter chocolate chunk\n 6 × Cakepop · Cookies & Cream\nPickup      Saturday\nPaid        link sent\nBatch       capacity updated' },
 
-    { slug: 'atelier-renovation', chan: 'Site chat', lang: 'FR', log: [
-      ['in',  'Bonjour, je voudrais refaire une salle de bain à Palaiseau.'],
-      ['out', 'Bonjour ! Pour préparer le devis : quelle surface environ, et faut-il toucher à la plomberie ?'],
-      ['in',  'Environ 6 m², et on déplace la douche.'],
-      ['out', 'Merci. Déplacer la douche demande une visite avant de chiffrer. Je peux proposer mardi 10h ou jeudi 16h.'],
-      ['in',  'Jeudi.'],
-      ['out', 'C\'est noté pour jeudi 16h. Vous recevez le récapitulatif par e-mail.'] ],
-      brief: 'DEMANDE QUALIFIÉE\nProjet      Salle de bain · 6 m²\nMétiers     Plomberie, plâtrerie, peinture\nLieu        Palaiseau (91)\nVisite      Jeudi 16:00\nNote        déplacement de la douche' },
+    { slug: 'atelier-renovation', chan: 'Site chat', log: [
+      ['in',  'Hello, I would like to redo a bathroom in Palaiseau.'],
+      ['out', 'Hello! To prepare the quote: roughly how big is the room, and does the plumbing need to change?'],
+      ['in',  'About 6 m², and we want to move the shower.'],
+      ['out', 'Thanks. Moving the shower needs a site visit before we can price it. I can offer Tuesday 10:00 or Thursday 16:00.'],
+      ['in',  'Thursday.'],
+      ['out', 'Booked for Thursday at 16:00. You will get a summary by email.'] ],
+      brief: 'QUALIFIED REQUEST\nProject     Bathroom · 6 m²\nTrades      Plumbing, plaster, painting\nLocation    Palaiseau (91)\nVisit       Thursday 16:00\nNote        shower to be moved' },
 
-    { slug: 'riv-group', chan: 'WhatsApp', lang: 'EN', log: [
-      ['in',  "We're planning a 3-storey office in Bekasi, about 900 m². Do you do design & build?"],
+    { slug: 'riv-group', chan: 'WhatsApp', log: [
+      ['in',  'We are planning a 3-storey office in Bekasi, about 900 m². Do you do design & build?'],
       ['out', 'Yes — design & build is one of our six service lines. Is the land ready, and when would you like to start?'],
       ['in',  'Land is ready, start in Q2'],
-      ['out', "Noted. I've sent two similar commercial projects from our portfolio. Our estimator can survey the site — which day suits you?"] ],
+      ['out', 'Noted. I have sent two similar commercial projects from our portfolio. Our estimator can survey the site — which day suits you?'] ],
       brief: 'TENDER BRIEF\nType        Commercial · 3-storey office\nArea        ~900 m²\nLocation    Bekasi\nScope       Design & build\nStart       Q2 · land ready\nNext        site survey' },
 
-    { slug: 'zona-seafood', chan: 'WhatsApp', lang: 'ID', log: [
-      ['in',  'Mau reservasi 12 orang, malam Minggu jam 7'],
-      ['out', 'Bisa! Dari daerah mana, kak? Saya carikan cabang terdekat yang masih ada meja panjang.'],
+    { slug: 'zona-seafood', chan: 'WhatsApp', log: [
+      ['in',  'I would like a table for 12 on Saturday night at 7'],
+      ['out', 'Sure! Which area are you coming from? I will find the nearest branch that still has a long table.'],
       ['in',  'Seturan'],
-      ['out', 'Cabang terdekat dari Seturan masih ada meja untuk 12 orang jam 19.00. Saya pesankan atas nama siapa?'] ],
+      ['out', 'The branch nearest Seturan has a table for 12 at 19:00. What name should I book it under?'] ],
       brief: 'RESERVATION → nearest branch\nParty       12 people · long table\nWhen        Saturday 19:00\nFrom        Seturan\nFlag        large group, kitchen notified' },
 
-    { slug: 'lpm-pelita-kasih', chan: 'WhatsApp', lang: 'ID', log: [
-      ['in',  'Saya ingin jadi orang tua asuh, caranya bagaimana?'],
-      ['out', 'Terima kasih! Orang Tua Asuh mendampingi pendidikan seorang anak asuh. Boleh saya catat nama dan kota Ibu/Bapak? Tim kami akan menghubungi untuk perkenalan.'],
-      ['in',  'Maria, dari Semarang'],
-      ['out', 'Sudah kami catat, Bu Maria. Tim LPM Pelita Kasih akan menghubungi Ibu dalam dua hari kerja.'] ],
-      brief: 'CALON ORANG TUA ASUH\nNama        Maria\nKota        Semarang\nMinat       Orang Tua Asuh (OTA)\nNext        perkenalan oleh tim' },
+    { slug: 'lpm-pelita-kasih', chan: 'WhatsApp', log: [
+      ['in',  'I would like to become a foster parent. How does it work?'],
+      ['out', 'Thank you! A foster parent supports one child\'s education through the foundation. May I note your name and city? Our team will contact you to introduce the programme.'],
+      ['in',  'Maria, from Semarang'],
+      ['out', 'Noted, Maria. The LPM Pelita Kasih team will contact you within two working days.'] ],
+      brief: 'NEW FOSTER PARENT ENQUIRY\nName        Maria\nCity        Semarang\nInterest    Foster parent programme\nNext        introduction call by the team' },
   ];
 
   const con = document.querySelector('#console');
@@ -74,7 +74,7 @@
     side.innerHTML = DEMOS.map((d, i) => {
       const p = P[d.slug] || { name: d.slug, sector: '' };
       return `<button type="button" role="tab" aria-selected="${i === 0}" data-i="${i}">
-        <b>${esc(p.name)}</b><span>${esc((A[d.slug] || {}).name || '')} · ${d.lang}</span></button>`;
+        <b>${esc(p.name)}</b><span>${esc((A[d.slug] || {}).name || '')}</span></button>`;
     }).join('');
     const tabs = [...side.querySelectorAll('button')];
 

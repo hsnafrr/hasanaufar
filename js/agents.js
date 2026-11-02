@@ -8,7 +8,7 @@ window.AGENTS = {
     name: "Pelita Desk",
     job: "Answers donors, patients and volunteers from the foundation's own documents.",
     does: [
-      "Tells a patient the clinic's hours, services and what to bring, in Bahasa Indonesia",
+      "Tells a patient the clinic's hours, services and what to bring",
       "Walks a donor through foster parenting (OTA) and logs the pledge for the office",
       "Drafts the monthly field report from the news posts and photos already on the site"
     ],
@@ -35,8 +35,8 @@ window.AGENTS = {
     lands: "Calendar · Email · SMS"
   },
   "atelier-renovation": {
-    name: "Chef de chantier",
-    job: "Qualifies quote requests in French and books the site visit.",
+    name: "Site Lead",
+    job: "Qualifies quote requests and books the site visit.",
     does: [
       "Asks the questions a quote depends on: trades, surface, access, deadline, budget",
       "Reads the customer's photos and flags what needs a visit before pricing",
@@ -88,7 +88,7 @@ window.AGENTS = {
     name: "Tender Desk",
     job: "Turns an inbound enquiry into a project brief the estimator can price.",
     does: [
-      "Asks project type, area, location and timeline, in Bahasa or English",
+      "Asks project type, area, location and timeline",
       "Pulls the three most similar past projects from the portfolio to send back",
       "Books the survey and hands the estimator a structured brief"
     ],
@@ -126,7 +126,7 @@ window.AGENTS = {
   },
   "vie-beauty": {
     name: "Ritual Guide",
-    job: "The find-your-ritual quiz, as a conversation in both languages.",
+    job: "The find-your-ritual quiz, as a conversation.",
     does: [
       "Recommends a treatment from skin condition and the time the guest has",
       "Composes the booking as the structured WhatsApp message admin already uses",
