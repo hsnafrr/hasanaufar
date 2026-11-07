@@ -17,4 +17,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://farnsherstudio.vercel.app/sitemap.xml
+Sitemap: https://farnsherstudio.com/sitemap.xml

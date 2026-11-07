@@ -67,7 +67,7 @@ def rename(font, family, style="Regular"):
         if rec.nameID not in keep:
             name.removeNames(nameID=rec.nameID)
     for nid, val in {1: family, 2: style, 3: f"{ps};farnsher", 4: full, 6: ps,
-                     5: "Version 1.000; built for farnsherstudio.vercel.app", 16: family, 17: style}.items():
+                     5: "Version 1.000; built for farnsherstudio.com", 16: family, 17: style}.items():
         name.setName(val, nid, 3, 1, 0x409)
     name.setName(
         "Farnsher Display and Farnsher Text are modified versions of Fraunces "
