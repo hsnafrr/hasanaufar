@@ -44,16 +44,6 @@ window.AGENTS = {
     ],
     lands: "Email · Google Calendar"
   },
-  "combinatoria": {
-    name: "Tutor",
-    job: "Explains the step a student got wrong, not just the right answer.",
-    does: [
-      "Spots whether a mistake is about order mattering or about repetition",
-      "Gives a smaller version of the same puzzle before revealing the method",
-      "Builds a weekly practice set from the topics each student misses most"
-    ],
-    lands: "In the game · teacher report"
-  },
   "northlight-clinic": {
     name: "Front Desk",
     job: "Runs the six hand-offs between booking and follow-up.",
@@ -203,25 +193,5 @@ window.AGENTS = {
       "Starts a return and tells the customer exactly what to send"
     ],
     lands: "Site chat · Email · Stripe"
-  },
-  "steak-hour-pos": {
-    name: "Shift Analyst",
-    job: "Reads the POS and tells the owner what happened today.",
-    does: [
-      "Sends an end-of-shift summary: covers, top items, voids",
-      "Flags stock that will run out tomorrow at today's pace",
-      "Answers 'how did Friday compare to last Friday' in one message"
-    ],
-    lands: "WhatsApp · POS data"
-  },
-  "hyve-hotel": {
-    name: "Reception",
-    job: "Room questions, bookings and check-in details around the clock.",
-    does: [
-      "Shows availability and price for the dates, and books the room",
-      "Sends check-in instructions and asks about arrival time",
-      "Handles late-night requests and hands real problems to staff"
-    ],
-    lands: "WhatsApp · Booking engine"
   }
 };

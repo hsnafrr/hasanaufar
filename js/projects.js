@@ -66,21 +66,6 @@ window.PROJECTS = [
     "role": "Requests arrive already qualified, so the first meeting is a site visit, not a phone interview."
   },
   {
-    "slug": "combinatoria",
-    "name": "Combinatoria",
-    "sector": "Maths learning game · high school",
-    "url": "https://combinatech-6pc7drkt.manus.space",
-    "client": false,
-    "stack": [
-      "Game-based learning",
-      "Bahasa Indonesia",
-      "Manus"
-    ],
-    "problem": "Combinatorics is where high-school students start memorising formulas they don't understand — permutation or combination becomes a guess.",
-    "solution": "A learning game that walks through counting rules, permutations, combinations and probability as a journey of puzzles, so the concept arrives before the formula.",
-    "role": "Proof that the same build process works for education, not only for shops."
-  },
-  {
     "slug": "northlight-clinic",
     "name": "Northlight Clinic",
     "sector": "Clinic booking system",
@@ -318,36 +303,5 @@ window.PROJECTS = [
     "problem": "Sellers who live inside a marketplace rent their branding and their margin.",
     "solution": "A white-labelable storefront that adapts across product types, so a small brand can own the checkout and the look.",
     "role": "The base I extend when an SME wants off marketplace dependency."
-  },
-  {
-    "slug": "steak-hour-pos",
-    "name": "Steak Hour POS",
-    "sector": "Point of sale",
-    "url": "https://pos-digital-cashier-hyve.vercel.app",
-    "client": false,
-    "stack": [
-      "React",
-      "Vite",
-      "Vercel"
-    ],
-    "problem": "Small kitchens still close the day on paper, which means arithmetic errors and no usable sales history.",
-    "solution": "A digital cashier for transactions and daily operations — the boring tool the business runs on.",
-    "role": "Operational software, not a brochure. The build that says I can ship tools."
-  },
-  {
-    "slug": "hyve-hotel",
-    "name": "HYVE Hotel",
-    "sector": "Hotel booking",
-    "url": "https://hyve-hotel.vercel.app",
-    "client": false,
-    "stack": [
-      "Next.js",
-      "Tailwind",
-      "shadcn/ui",
-      "Vercel"
-    ],
-    "problem": "Hotels hand a large cut of every room night to OTAs, largely because direct booking on their own site is worse than Booking.com.",
-    "solution": "Landing page plus a complete booking flow — room collections, amenities, dining, offers — with a booking CTA reachable from any section.",
-    "role": "End-to-end reservation flow, the first build in this series."
   }
 ];
