@@ -1,4 +1,4 @@
-# hasanaufar.com — personal site
+# farnsherstudio.vercel.app — personal site
 
 Static site. No build step, no framework. Open `index.html` on any static host
 (Vercel, Netlify, GitHub Pages, plain nginx) and it works.

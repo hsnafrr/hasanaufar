@@ -2,9 +2,9 @@
 
 > Websites, AI agents and automation for small businesses in Yogyakarta and across Indonesia. 19 shipped builds, each paired with an AI agent, plus SEO, content and Meta Ads.
 
-- [Portfolio and services](https://hasanaufar.com/): work, agents, growth, services, booking
-- [Privacy policy](https://hasanaufar.com/privacy)
-- [Terms of service](https://hasanaufar.com/terms)
+- [Portfolio and services](https://farnsherstudio.vercel.app/): work, agents, growth, services, booking
+- [Privacy policy](https://farnsherstudio.vercel.app/privacy)
+- [Terms of service](https://farnsherstudio.vercel.app/terms)
 
 ## Contact
 - Email: hasan.aufar1504@gmail.com

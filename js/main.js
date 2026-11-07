@@ -210,7 +210,7 @@
     lines.push(needs.length ? `Needs: ${needs.join(', ')}.`
                             : 'Needs: just the pages for now.');
     if (who.value.trim()) lines.push(`Business: ${who.value.trim()}.`);
-    lines.push('Sent from hasanaufar.com');
+    lines.push('Sent from farnsherstudio.vercel.app');
     return lines.join('\n');
   };
 
