@@ -51,8 +51,8 @@
       name: 'Frontend &amp; AI agents',
       img: 'assets/img/id-developer.webp',
       tag: 'Frontend / AI',
-      meta: 'Twenty-two builds live',
-      copy: 'Next.js, Tailwind and vanilla JS on the front; agent and workflow automation behind it — booking flows that compose themselves into WhatsApp messages, estimators, client portals, RAG. Self-taught, twenty-two builds live, still learning in public.',
+      meta: 'Nineteen builds live',
+      copy: 'Next.js, Tailwind and vanilla JS on the front; agent and workflow automation behind it — booking flows that compose themselves into WhatsApp messages, estimators, client portals, RAG. Self-taught, nineteen builds live, still learning in public.',
       facts: [
         ['Stack', 'Next.js · React · Tailwind · vanilla JS · GSAP'],
         ['Automation', 'AI agents, workflow tooling, WhatsApp handoff'],
