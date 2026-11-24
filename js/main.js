@@ -298,74 +298,22 @@
       opacity: 0, y: 14, duration: 1, ease: 'power2.out', delay: .9, stagger: .12
     });
 
-    /* ---- the film: one timeline, scrubbed by scroll ----
-       The video is seeked frame by frame, and the beats are placed on
-       the same timeline so each line lands on a moment of the footage. */
+    /* ---- the film: autoplays on loop; beats cycle on a clock, not scroll ---- */
     const v = $('#heroVideo');
-    const proxy = { t: 0 };
-    let ready = false, wanted = 0, raf = 0;
+    v.muted = true;
+    const tryPlay = () => v.play().catch(() => {});
+    tryPlay();
+    window.addEventListener('touchstart', tryPlay, { once: true, passive: true });
+    new IntersectionObserver(([e]) => e.isIntersecting ? tryPlay() : v.pause()).observe(v);
 
-    const seek = () => {
-      raf = 0;
-      if (ready && Math.abs(v.currentTime - wanted) > 0.012) v.currentTime = wanted;
-    };
-    const onReady = () => {
-      ready = true;
-      ScrollTrigger.refresh();
-      v.removeEventListener('loadeddata', onReady);
-    };
-    v.addEventListener('loadeddata', onReady);
-    if (v.readyState >= 2) onReady();
-
-    /* iOS ignores currentTime until the element has seen a gesture */
-    const prime = () => {
-      v.play().then(() => v.pause()).catch(() => {});
-      window.removeEventListener('touchstart', prime);
-      window.removeEventListener('pointerdown', prime);
-    };
-    window.addEventListener('touchstart', prime, { once: true, passive: true });
-    window.addEventListener('pointerdown', prime, { once: true });
-
-    const end = $('#heroEnd');
-    const film = gsap.timeline({
-      defaults: { ease: 'none' },
-      scrollTrigger: {
-        trigger: '#hero',
-        start: 'top top',
-        end: '+=420%',
-        scrub: .5,
-        pin: '.hero__stage',
-        pinSpacing: true,
-        anticipatePin: 1,
-        invalidateOnRefresh: true,
-        onUpdate: self => end.classList.toggle('is-live', self.progress > 0.9)
-      }
-    });
-
-    /* 0 → 10: the footage itself */
-    film.to(proxy, {
-      t: () => (v.duration || 8) - 0.05, duration: 10,
-      onUpdate() { wanted = proxy.t; if (!raf) raf = requestAnimationFrame(seek); }
-    }, 0);
-
-    /* the opening title clears the frame */
-    film.to('#heroInner', { yPercent: -14, opacity: 0, duration: 1.1 }, 0.25)
-        .to('#heroCue',   { opacity: 0, duration: .5 }, 0);
-
-    /* three beats, each held for a beat, then released */
     const beats = ['#beat1', '#beat2', '#beat3'];
-    const at = [1.9, 4.0, 6.1];
+    const loop = gsap.timeline({ repeat: -1, delay: 2.2 });
     beats.forEach((b, i) => {
-      film.fromTo(b, { opacity: 0, y: 34, filter: 'blur(6px)' },
-        { opacity: 1, y: 0, filter: 'blur(0px)', duration: .8, ease: 'power2.out' }, at[i])
-          .to(b, { opacity: 0, y: -26, filter: 'blur(5px)', duration: .7, ease: 'power2.in' },
-        at[i] + 1.5);
+      loop.fromTo(b, { opacity: 0, y: 34, filter: 'blur(6px)' },
+        { opacity: 1, y: 0, filter: 'blur(0px)', duration: .8, ease: 'power2.out' })
+          .to(b, { opacity: 0, y: -26, filter: 'blur(5px)', duration: .7, ease: 'power2.in' }, '+=2.6');
     });
-
-    /* the end card: know more */
-    film.fromTo(end, { opacity: 0, scale: .97 },
-      { opacity: 1, scale: 1, duration: 1, ease: 'power2.out' }, 8.4);
-    film.fromTo('#heroEnd .h2', { y: 26 }, { y: 0, duration: 1, ease: 'power2.out' }, 8.4);
+    gsap.to('#heroCue', { opacity: 0, scrollTrigger: { trigger: '#hero', start: 'top top', end: '+=200', scrub: true } });
 
     /* section reveals — once in, they stay in */
     const show = els => (els.forEach(el => { el.dataset.rv = 'in'; }), gsap.to(els, {
@@ -404,8 +352,7 @@
 
   mm.add({ still: '(prefers-reduced-motion: reduce)' }, () => {
     gsap.set('.rv', { opacity: 1, y: 0 });
-    gsap.set('#heroEnd', { opacity: 1 });
-    $('#heroEnd').classList.add('is-live');
+    gsap.set('#beat1', { opacity: 1 });
   });
 
   window.addEventListener('load', () => ScrollTrigger.refresh());

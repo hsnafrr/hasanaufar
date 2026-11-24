@@ -12,7 +12,9 @@
 <link rel="alternate" hreflang="x-default" href="https://farnsherstudio.com/">
 <meta name="author" content="Hasan Aufar">
 <meta name="theme-color" content="#04080F">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2304080F'/%3E%3Cpath d='M16 5.5 26.5 16 16 26.5 5.5 16Z' fill='none' stroke='%23D9C9A6' stroke-width='1.6'/%3E%3Cpath d='M16 11.5v9M12.5 16h7' stroke='%238FD8EE' stroke-width='1.4'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/img/icon-512.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Farnsher Studio">
 <meta property="og:locale" content="en_US">
@@ -41,10 +43,7 @@
 
 <header class="nav" id="nav">
   <a class="mark" href="#top" aria-label="Hasan Aufar — home">
-    <svg class="mark__glyph" viewBox="0 0 32 32" aria-hidden="true">
-      <path d="M16 3 29 16 16 29 3 16Z"/>
-      <path class="mark__inner" d="M16 9.5v13M10.5 16h11"/>
-    </svg>
+    <img class="mark__glyph mark__logo" src="/assets/img/logo-mark.webp" alt="" width="34" height="34">
     <span class="mark__text"><b>Hasan Aufar</b><i>Farnsher Studio</i></span>
   </a>
   <nav class="nav__links" aria-label="Sections">
@@ -63,7 +62,7 @@
 <section class="hero" id="hero" aria-label="Introduction">
   <div class="hero__stage">
     <video class="hero__video" id="heroVideo" src="assets/video/hero-scrub.mp4"
-           poster="assets/img/hero-poster.webp" muted playsinline preload="auto"
+           poster="assets/img/hero-poster.webp" muted playsinline autoplay loop preload="auto"
            disablepictureinpicture aria-hidden="true"></video>
     <div class="hero__scrim"></div>
     <div class="hero__grain"></div>
@@ -77,11 +76,15 @@
       <p class="hero__meta" id="heroMeta">
         <span>Hasan Aufar</span><span class="dot" aria-hidden="true"></span>
         <span>Yogyakarta, Indonesia</span><span class="dot" aria-hidden="true"></span>
-        <span>Available for frontend &amp; automation work</span>
+        <span>Available for frontend, automation &amp; UGC work</span>
       </p>
+      <div class="hero__ctl">
+        <a class="btn" href="#ugc">UGC &amp; creator work</a>
+        <a class="link" href="#work">See the builds</a>
+      </div>
     </div>
 
-    <!-- scroll-driven beats: each one lands on a moment of the footage -->
+    <!-- beats cycle on a loop over the footage -->
     <div class="beats">
       <figure class="beat" id="beat1">
         <span class="beat__n">01</span>
@@ -100,17 +103,34 @@
       </figure>
     </div>
 
-    <div class="hero__end" id="heroEnd">
-      <p class="eyebrow eyebrow--c">Nineteen builds &middot; an agent for each</p>
-      <h2 class="h2">Everything after this<br>is the evidence.</h2>
-      <div class="hero__endctl">
-        <a class="btn" href="#identities">Know more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
-        <a class="link" href="#work">Or jump straight to the work</a>
-      </div>
-    </div>
 
     <p class="hero__cue" id="heroCue"><i aria-hidden="true"></i>Scroll</p>
   </div>
+</section>
+
+<!-- ============ UGC · CREATOR ============ -->
+<section class="section ugc" id="ugc" aria-labelledby="ugcTitle">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">00</span> UGC creator &amp; influencer</p>
+    <h2 class="h2 rv" id="ugcTitle">I also make videos for brands.</h2>
+    <p class="lede rv" style="margin-top:1.2rem">UGC ads, product reviews, unboxings and tech explainers &mdash; scripted, shot and edited for Reels, TikTok and Shorts. Built to stop the scroll and sell, the same way I grew my own channels.</p>
+    <ul class="ugc__links rv">
+      <li><a href="https://www.instagram.com/hsnrr.ugc/" target="_blank" rel="noopener"><b>Instagram</b> @hsnrr.ugc <small>UGC</small></a></li>
+      <li><a href="https://www.tiktok.com/@hasantechugc" target="_blank" rel="noopener"><b>TikTok</b> @hasantechugc <small>UGC</small></a></li>
+      <li><a href="https://www.instagram.com/hsnrr.tech/" target="_blank" rel="noopener"><b>Instagram</b> @hsnrr.tech <small>Personal</small></a></li>
+      <li><a href="https://www.tiktok.com/@hsnrr.tech" target="_blank" rel="noopener"><b>TikTok</b> @hsnrr.tech <small>Personal</small></a></li>
+      <li><a href="https://www.youtube.com/@hsnrrtech" target="_blank" rel="noopener"><b>YouTube</b> @hsnrrtech</a></li>
+    </ul>
+  </div>
+  <ul class="ugc__reels" aria-label="UGC video portfolio">
+        <li class="ugc__reel"><a class="ugc__card" href="https://www.instagram.com/reel/DgBdWg4ybbS/" target="_blank" rel="noopener" aria-label="Watch UGC reel 1 on Instagram"><img src="assets/img/ugc/DgBdWg4ybbS.webp" alt="" loading="lazy" width="540" height="960"><span class="ugc__play" aria-hidden="true">&#9654;</span><span class="ugc__n">Reel 01</span><span class="ugc__open">Watch on Instagram &nearr;</span></a></li>
+        <li class="ugc__reel"><a class="ugc__card" href="https://www.instagram.com/reel/DgBgzgyIGlj/" target="_blank" rel="noopener" aria-label="Watch UGC reel 2 on Instagram"><img src="assets/img/ugc/DgBgzgyIGlj.webp" alt="" loading="lazy" width="540" height="960"><span class="ugc__play" aria-hidden="true">&#9654;</span><span class="ugc__n">Reel 02</span><span class="ugc__open">Watch on Instagram &nearr;</span></a></li>
+        <li class="ugc__reel"><a class="ugc__card" href="https://www.instagram.com/reel/DgFr9eryP7O/" target="_blank" rel="noopener" aria-label="Watch UGC reel 3 on Instagram"><img src="assets/img/ugc/DgFr9eryP7O.webp" alt="" loading="lazy" width="540" height="960"><span class="ugc__play" aria-hidden="true">&#9654;</span><span class="ugc__n">Reel 03</span><span class="ugc__open">Watch on Instagram &nearr;</span></a></li>
+        <li class="ugc__reel"><a class="ugc__card" href="https://www.instagram.com/reel/DgBhx1ESX3t/" target="_blank" rel="noopener" aria-label="Watch UGC reel 4 on Instagram"><img src="assets/img/ugc/DgBhx1ESX3t.webp" alt="" loading="lazy" width="540" height="960"><span class="ugc__play" aria-hidden="true">&#9654;</span><span class="ugc__n">Reel 04</span><span class="ugc__open">Watch on Instagram &nearr;</span></a></li>
+        <li class="ugc__reel"><a class="ugc__card" href="https://www.instagram.com/reel/DgG61-mptGr/" target="_blank" rel="noopener" aria-label="Watch UGC reel 5 on Instagram"><img src="assets/img/ugc/DgG61-mptGr.webp" alt="" loading="lazy" width="540" height="960"><span class="ugc__play" aria-hidden="true">&#9654;</span><span class="ugc__n">Reel 05</span><span class="ugc__open">Watch on Instagram &nearr;</span></a></li>
+        <li class="ugc__reel"><a class="ugc__card" href="https://www.instagram.com/reel/DgCcDLnCNnS/" target="_blank" rel="noopener" aria-label="Watch UGC reel 6 on Instagram"><img src="assets/img/ugc/DgCcDLnCNnS.webp" alt="" loading="lazy" width="540" height="960"><span class="ugc__play" aria-hidden="true">&#9654;</span><span class="ugc__n">Reel 06</span><span class="ugc__open">Watch on Instagram &nearr;</span></a></li>
+  </ul>
+  <div class="wrap"><a class="btn" href="#booking">Book a UGC video</a></div>
 </section>
 
 <!-- ============ 01 · IDENTITIES ============ -->
